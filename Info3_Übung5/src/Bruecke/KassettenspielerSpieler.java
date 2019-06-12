@@ -1,4 +1,4 @@
-package Bruecke�cke;
+package Bruecke;
 
 public class KassettenspielerSpieler implements IAbspielgeraetImpl {
 
