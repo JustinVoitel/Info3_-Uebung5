@@ -1,5 +1,7 @@
 package Bruecke;
 
+import java.util.ArrayList;
+
 public class Abspielgeraet {
 	
 	IAbspielgeraetImpl abspielgeraet;
@@ -13,6 +15,10 @@ public class Abspielgeraet {
 	}
 	
 	public void ausschalten() {
-		System.out.println("Schalte Abspielgeraet aus!");
+		abspielgeraet.ausschalten();
+	}
+	
+	public ArrayList getTracks(){
+		return abspielgeraet.getTracks();
 	}
 }
