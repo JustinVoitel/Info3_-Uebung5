@@ -1,6 +1,6 @@
-package Brücke;
+package Bruecke;
 
-public interface IAbspielgerätImpl {
+public interface IAbspielgeraetImpl {
 	public void springeZuTrack(int trackNr);
 	public void leseDaten();
 	public void ausschalten();

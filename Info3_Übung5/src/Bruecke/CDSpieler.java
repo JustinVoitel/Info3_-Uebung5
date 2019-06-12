@@ -1,8 +1,8 @@
-package Brücke;
+package Bruecke;
 
 import java.util.ArrayList;
 
-public class CDSpieler implements IAbspielgerätImpl {
+public class CDSpieler implements IAbspielgeraetImpl {
 
 	private ArrayList<String> tracks;
 	

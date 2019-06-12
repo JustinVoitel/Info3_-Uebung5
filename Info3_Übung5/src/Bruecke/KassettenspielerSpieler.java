@@ -1,6 +1,6 @@
-package Brücke;
+package Brueckeï¿½cke;
 
-public class KassettenspielerSpieler implements IAbspielgerätImpl {
+public class KassettenspielerSpieler implements IAbspielgeraetImpl {
 
 	public KassettenspielerSpieler() {
 		// TODO Auto-generated constructor stub
