@@ -3,19 +3,15 @@ package Bruecke;
 import java.util.ArrayList;
 
 public class CDSpieler implements IAbspielgeraetImpl {
-
-	private ArrayList<String> tracks;
 	
 	public CDSpieler() {
 
-		tracks = new ArrayList<>();
-		this.initTracks(20);
 	}
 
 	@Override
 	public void springeZuTrack(int trackNr) {
 		
-		System.out.println("Lesekopf spring zu "+ tracks.get(trackNr));
+		System.out.println("Lesekopf spring zu " + trackNr);
 		this.leseDaten();
 		
 		
@@ -35,17 +31,4 @@ public class CDSpieler implements IAbspielgeraetImpl {
 		
 	}
 	
-	public void initTracks(int trackCount) {
-		for(int i = 0;i<trackCount;i++) {
-			this.tracks.add("Track "+ (i+1) );
-		}
-	}
-
-	@Override
-	public ArrayList<String> getTracks() {
-
-		return tracks;
-	}
-
-
 }

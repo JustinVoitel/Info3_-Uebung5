@@ -1,38 +1,38 @@
 package Bruecke;
 
-import java.util.ArrayList;
+
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.Random;
 
 public class Listenabspielgeraet extends Abspielgeraet {
 
-	ArrayList<String> list = abspielgeraet.getTracks();
-	Random r = new Random();
+	private Random r = new Random();
+	private Liste playList;
 	
-	public Listenabspielgeraet(IAbspielgeraetImpl imp) {
+	public Listenabspielgeraet(IAbspielgeraetImpl imp, Liste list) {
 		super(imp);
+		this.playList = list;
 	}
 	
 	public void shuffleTracks() {
 		
-		System.out.println("Playlist before shuffling: " + list.toString());
+		System.out.println("Playlist before shuffling: " + this.playList.getList().toString());
 		
-		for (int i = 0; i < list.size(); i++) {
-			int track1 = r.nextInt(list.size() - 1);
-			int track2 = r.nextInt(list.size() - 1);
+		for (int i = 0; i < playList.getLenght(); i++) {
+			int track1 = r.nextInt(playList.getLenght() - 1);
+			int track2 = r.nextInt(playList.getLenght() - 1);
 			
-			Collections.swap(list, track1, track2);
+			Collections.swap(this.playList.getList(), track1, track2);
 		}
 		
-		System.out.println("Playlist after shuffling: " + list.toString());
+		System.out.println("Playlist after shuffling: " + this.playList.getList().toString());
 		
 	}
 	
 	public void playPlaylist() {
 		
-		for(String track: this.list) {
-			abspielgeraet.springeZuTrack(list.indexOf(track));
+		for(String track: this.playList.getList()) {
+			abspielgeraet.springeZuTrack(this.playList.getList().indexOf(track));
 		}
 		
 	}

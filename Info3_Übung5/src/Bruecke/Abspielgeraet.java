@@ -18,7 +18,4 @@ public class Abspielgeraet {
 		abspielgeraet.ausschalten();
 	}
 	
-	public ArrayList getTracks(){
-		return abspielgeraet.getTracks();
-	}
 }
