@@ -34,11 +34,11 @@ public class KassettenspielerSpieler implements IAbspielgeraetImpl {
 	}
 	
 	public void spuleVorZuTrack(int trackNr) {
-		System.out.println("Spule vor zu track "+ trackNr);
+		System.out.println("Spule vor zu Track "+ trackNr);
 	}
 	
 	public void spuleZurückZuTrack(int trackNr) {
-		System.out.println("Spule zurück zu track "+ trackNr);
+		System.out.println("Spule zurück zu Track "+ trackNr);
 	}
 
 }

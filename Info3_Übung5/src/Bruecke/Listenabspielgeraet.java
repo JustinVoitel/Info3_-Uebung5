@@ -16,7 +16,7 @@ public class Listenabspielgeraet extends Abspielgeraet {
 	
 	public void shuffleTracks() {
 		
-		System.out.println("Playlist before shuffling: " + this.playList.getList().toString());
+		//System.out.println("Playlist before shuffling: " + this.playList.getList().toString()); // zum Testen 
 		
 		for (int i = 0; i < playList.getLenght(); i++) {
 			int track1 = r.nextInt(playList.getLenght() - 1);
@@ -25,14 +25,16 @@ public class Listenabspielgeraet extends Abspielgeraet {
 			Collections.swap(this.playList.getList(), track1, track2);
 		}
 		
-		System.out.println("Playlist after shuffling: " + this.playList.getList().toString());
+		System.out.println("Liste wurde geshuffled!");
 		
+		//System.out.println("Playlist after shuffling: " + this.playList.getList().toString()); // zum Testen
+
 	}
 	
 	public void playPlaylist() {
 		
-		for(String track: this.playList.getList()) {
-			abspielgeraet.springeZuTrack(this.playList.getList().indexOf(track));
+		for(int i = 0; i < playList.getLenght(); i++) {
+			abspielgeraet.springeZuTrack(this.playList.getTrackNr(i));
 		}
 		
 	}

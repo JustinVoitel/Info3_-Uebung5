@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Liste {
 
-	ArrayList<String> tracks;
+	ArrayList<Integer> tracks;
 	
 	public Liste(int nrOfTracks) {
 		tracks = new ArrayList<>();
@@ -14,17 +14,21 @@ public class Liste {
 	public void initTracks(int nrOfTracks) {
 		
 		for (int i = 0; i < nrOfTracks; i++) {
-			this.tracks.add("Track " + (i + 1));
+			this.tracks.add(i,i + 1);
 		}
 
 	}
 	
-	public ArrayList<String> getList() {
+	public ArrayList<Integer> getList() {
 		return this.tracks;
 	}
 	
 	public int getLenght() {
 		return tracks.size();
+	}
+	
+	public int getTrackNr(int index) {
+		return tracks.get(index);
 	}
 
 }

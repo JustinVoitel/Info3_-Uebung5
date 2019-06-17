@@ -11,7 +11,7 @@ public class CDSpieler implements IAbspielgeraetImpl {
 	@Override
 	public void springeZuTrack(int trackNr) {
 		
-		System.out.println("Lesekopf spring zu " + trackNr);
+		System.out.println("Lesekopf spring zu Track " + trackNr);
 		this.leseDaten();
 		
 		
