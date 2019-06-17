@@ -10,7 +10,7 @@ public class Client {
 		
 		System.out.println("\n");
 		
-		Abspielgeraet geraetB = new Abspielgeraet(new KassettenspielerSpieler());
+		Abspielgeraet geraetB = new Abspielgeraet(new Kassettenspieler());
 		geraetB.spieleAb(5); 
 		geraetB.spieleAb(3);
 		geraetB.ausschalten();

@@ -2,12 +2,12 @@ package Bruecke;
 
 import java.util.ArrayList;
 
-public class KassettenspielerSpieler implements IAbspielgeraetImpl {
+public class Kassettenspieler implements IAbspielgeraetImpl {
 
 	private int currentTrackNr = 0;
 	private int lastTrackNr = 0;
 	
-	public KassettenspielerSpieler() {
+	public Kassettenspieler() {
 		
 	}
 
