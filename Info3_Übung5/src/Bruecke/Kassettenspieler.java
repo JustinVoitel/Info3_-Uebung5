@@ -16,7 +16,7 @@ public class Kassettenspieler implements IAbspielgeraetImpl {
 		this.currentTrackNr = trackNr;
 		
 		if(currentTrackNr >= lastTrackNr) this.spuleVorZuTrack(trackNr);
-		else if(currentTrackNr < lastTrackNr || currentTrackNr == lastTrackNr) this.spuleZurückZuTrack(trackNr);
+		else if(currentTrackNr < lastTrackNr || currentTrackNr == lastTrackNr) this.spuleZurueckZuTrack(trackNr);
 		this.leseDaten();
 		this.lastTrackNr = trackNr;
 		
@@ -37,8 +37,8 @@ public class Kassettenspieler implements IAbspielgeraetImpl {
 		System.out.println("Spule vor zu Track "+ trackNr);
 	}
 	
-	public void spuleZurückZuTrack(int trackNr) {
-		System.out.println("Spule zurück zu Track "+ trackNr);
+	public void spuleZurueckZuTrack(int trackNr) {
+		System.out.println("Spule zurueck zu Track "+ trackNr);
 	}
 
 }
